@@ -166,7 +166,9 @@ function restart() {
     <v-main>
       <v-container class="contenedor" style="min-width: 1366px;">
         <v-row>
-          <v-col cols="12" class="d-flex justify-center"><h1>Tetris</h1></v-col>
+          <v-col cols="12" class="d-flex justify-center">
+            <h1>Tetris</h1>
+          </v-col>
           <v-col cols="12" class="d-flex justify-center">
             <v-card>
               <v-card-text>
@@ -203,7 +205,9 @@ function restart() {
               </v-card-actions>
             </v-card>
           </v-col>
-          <v-col cols="12" class="d-flex justify-center"><h3>By San Valen</h3></v-col>
+          <v-col cols="12" class="d-flex justify-center">
+            <h3>By San Valen</h3>
+          </v-col>
         </v-row>
       </v-container>
     </v-main>
