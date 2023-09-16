@@ -20,7 +20,7 @@ const vuetify = createVuetify({
   },
   theme: {
     defaultTheme: 'dark',
-  }
+  },
 })
 
 createApp(App).use(vuetify).mount('#app')

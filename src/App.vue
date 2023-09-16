@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import { Piece, Cell } from "./models/pieza";
 import { Ref } from "vue";
+import arrowKeyesImgUrl from './assets/arrow-keys.png'
 
 const initialBoard = [
   [0,0,0,0,0,0,0,0,0,0],
@@ -164,7 +165,7 @@ function restart() {
 <template>
   <v-app>
     <v-main>
-      <v-container class="contenedor" style="max-width: 700px;">
+      <v-container class="contenedor" style="max-width: 1100px;">
         <v-row>
           <v-col class="d-flex align-center">
             <v-row>
@@ -239,6 +240,31 @@ function restart() {
                     </v-row>
                   </v-card-actions>
                 </v-card>
+              </v-col>
+            </v-row>
+          </v-col>
+          <v-col class="d-flex align-center">
+            <v-row>
+              <v-col cols="12" class="d-flex justify-center">
+                <h1>Controls:</h1>
+              </v-col>
+              <v-col cols="12" class="d-flex justify-center py-0">
+                <v-img :src="arrowKeyesImgUrl" :height="100" />
+              </v-col>
+              <v-col cols="12" class="d-flex justify-center">
+                <h6>Left: Arrow Left</h6>
+              </v-col>
+              <v-col cols="12" class="d-flex justify-center">
+                <h6>Right: Arrow Right</h6>
+              </v-col>
+              <v-col cols="12" class="d-flex justify-center">
+                <h6>Rotate: Arrow Up</h6>
+              </v-col>
+              <v-col cols="12" class="d-flex justify-center">
+                <h6>Down: Arrow Down</h6>
+              </v-col>
+              <v-col cols="12" class="d-flex justify-center">
+                <h4>Press "Play" button to start playing</h4>
               </v-col>
             </v-row>
           </v-col>
