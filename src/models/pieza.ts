@@ -76,7 +76,7 @@ export class Piece {
 
   checkEdgeCollision(newParts: Cell[]): boolean {
     return newParts.some((part) => {
-      return part.row < 0 || part.row > 9 || part.column < 0 || part.column > 9;
+      return part.row < 0 || part.row > 15 || part.column < 0 || part.column > 9;
     })
   }
 
